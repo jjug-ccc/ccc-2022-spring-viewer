@@ -414,10 +414,10 @@
           .then(data => {
             embed_domain = data["embed_domain"];
 
-            track_a_source = "https://www.youtube.com/embed/" + data["track_a"]["live_id"];
-            track_b_source = "https://www.youtube.com/embed/" + data["track_b"]["live_id"];
-            track_c_source = "https://www.youtube.com/embed/" + data["track_c"]["live_id"];
-            track_d_source = "https://www.youtube.com/embed/" + data["track_d"]["live_id"];
+            track_a_source = "https://www.youtube.com/embed/" + data["track_a"]["live_id"] + "?autoplay=1&mute=0";
+            track_b_source = "https://www.youtube.com/embed/" + data["track_b"]["live_id"] + "?autoplay=1&mute=0";
+            track_c_source = "https://www.youtube.com/embed/" + data["track_c"]["live_id"] + "?autoplay=1&mute=0";
+            track_d_source = "https://www.youtube.com/embed/" + data["track_d"]["live_id"] + "?autoplay=1&mute=0";
 
             track_a_chat_source = "https://www.youtube.com/live_chat?v=" + data["track_a"]["live_id"] + "&embed_domain=" + embed_domain;
             track_b_chat_source = "https://www.youtube.com/live_chat?v=" + data["track_b"]["live_id"] + "&embed_domain=" + embed_domain;
